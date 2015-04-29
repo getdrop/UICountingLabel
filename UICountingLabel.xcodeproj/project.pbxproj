@@ -19,6 +19,8 @@
 		4C5DC2BD16C576E30043204D /* CTPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DC2BC16C576E30043204D /* CTPViewController.m */; };
 		4C5DC2C016C576E30043204D /* CTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5DC2BE16C576E30043204D /* CTPViewController.xib */; };
 		4C5DC2CB16C577720043204D /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DC2CA16C577720043204D /* UICountingLabel.m */; };
+		87A6FF821AF1185B00303CA6 /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C5DC2C916C577720043204D /* UICountingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87A6FF831AF1187700303CA6 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DC2CA16C577720043204D /* UICountingLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +40,10 @@
 		4C5DC2BB16C576E30043204D /* CTPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTPViewController.h; sourceTree = "<group>"; };
 		4C5DC2BC16C576E30043204D /* CTPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTPViewController.m; sourceTree = "<group>"; };
 		4C5DC2BF16C576E30043204D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CTPViewController.xib; sourceTree = "<group>"; };
-		4C5DC2C916C577720043204D /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UICountingLabel.h; path = ../UICountingLabel.h; sourceTree = "<group>"; };
-		4C5DC2CA16C577720043204D /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UICountingLabel.m; path = ../UICountingLabel.m; sourceTree = "<group>"; };
+		4C5DC2C916C577720043204D /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = SOURCE_ROOT; };
+		4C5DC2CA16C577720043204D /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = SOURCE_ROOT; };
+		87A6FF691AF117FD00303CA6 /* UICountingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICountingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A6FF6C1AF117FD00303CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87A6FF651AF117FD00303CA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				4C5DC2A916C576E30043204D /* CountingTestProject */,
+				87A6FF6A1AF117FD00303CA6 /* UICountingLabel */,
 				4C5DC2A216C576E30043204D /* Frameworks */,
 				4C5DC2A116C576E30043204D /* Products */,
 			);
@@ -69,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				4C5DC2A016C576E30043204D /* CountingTestProject.app */,
+				87A6FF691AF117FD00303CA6 /* UICountingLabel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,8 +104,6 @@
 				4C5DC2BB16C576E30043204D /* CTPViewController.h */,
 				4C5DC2BC16C576E30043204D /* CTPViewController.m */,
 				4C5DC2BE16C576E30043204D /* CTPViewController.xib */,
-				4C5DC2C916C577720043204D /* UICountingLabel.h */,
-				4C5DC2CA16C577720043204D /* UICountingLabel.m */,
 				4C5DC2AA16C576E30043204D /* Supporting Files */,
 			);
 			path = CountingTestProject;
@@ -112,7 +123,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		87A6FF6A1AF117FD00303CA6 /* UICountingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				4C5DC2C916C577720043204D /* UICountingLabel.h */,
+				4C5DC2CA16C577720043204D /* UICountingLabel.m */,
+				87A6FF6B1AF117FD00303CA6 /* Supporting Files */,
+			);
+			path = UICountingLabel;
+			sourceTree = "<group>";
+		};
+		87A6FF6B1AF117FD00303CA6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87A6FF6C1AF117FD00303CA6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87A6FF661AF117FD00303CA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87A6FF821AF1185B00303CA6 /* UICountingLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4C5DC29F16C576E30043204D /* CountingTestProject */ = {
@@ -132,6 +172,24 @@
 			productReference = 4C5DC2A016C576E30043204D /* CountingTestProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		87A6FF681AF117FD00303CA6 /* UICountingLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87A6FF7C1AF117FE00303CA6 /* Build configuration list for PBXNativeTarget "UICountingLabel" */;
+			buildPhases = (
+				87A6FF641AF117FD00303CA6 /* Sources */,
+				87A6FF651AF117FD00303CA6 /* Frameworks */,
+				87A6FF661AF117FD00303CA6 /* Headers */,
+				87A6FF671AF117FD00303CA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICountingLabel;
+			productName = UICountingLabel;
+			productReference = 87A6FF691AF117FD00303CA6 /* UICountingLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -141,8 +199,13 @@
 				CLASSPREFIX = CTP;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Tim Gostony";
+				TargetAttributes = {
+					87A6FF681AF117FD00303CA6 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
 			};
-			buildConfigurationList = 4C5DC29B16C576E30043204D /* Build configuration list for PBXProject "CountingTestProject" */;
+			buildConfigurationList = 4C5DC29B16C576E30043204D /* Build configuration list for PBXProject "UICountingLabel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -155,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				4C5DC29F16C576E30043204D /* CountingTestProject */,
+				87A6FF681AF117FD00303CA6 /* UICountingLabel */,
 			);
 		};
 /* End PBXProject section */
@@ -172,6 +236,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87A6FF671AF117FD00303CA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -183,6 +254,14 @@
 				4C5DC2B416C576E30043204D /* CTPAppDelegate.m in Sources */,
 				4C5DC2BD16C576E30043204D /* CTPViewController.m in Sources */,
 				4C5DC2CB16C577720043204D /* UICountingLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87A6FF641AF117FD00303CA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87A6FF831AF1187700303CA6 /* UICountingLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,10 +367,84 @@
 			};
 			name = Release;
 		};
+		87A6FF7D1AF117FE00303CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = UICountingLabel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		87A6FF7E1AF117FE00303CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = UICountingLabel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C5DC29B16C576E30043204D /* Build configuration list for PBXProject "CountingTestProject" */ = {
+		4C5DC29B16C576E30043204D /* Build configuration list for PBXProject "UICountingLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C5DC2C116C576E30043204D /* Debug */,
@@ -308,6 +461,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		87A6FF7C1AF117FE00303CA6 /* Build configuration list for PBXNativeTarget "UICountingLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87A6FF7D1AF117FE00303CA6 /* Debug */,
+				87A6FF7E1AF117FE00303CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
